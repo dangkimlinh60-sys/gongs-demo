@@ -274,26 +274,26 @@ export default function AccountingServiceDetailPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-white">
       <Header />
 
       <main className="pt-20">
-        <div className="glass-effect border-b border-purple-500/20">
+        <div className="border-b border-slate-200 bg-white">
           <div className="container mx-auto px-4 py-4">
-            <Link href="/" className="inline-flex items-center text-gray-300 hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:bg-clip-text transition-colors">
+            <Link href="/" className="inline-flex items-center text-slate-700 hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:bg-clip-text transition-colors">
               <ArrowLeft className="w-4 h-4 mr-2" />
               返回首页
             </Link>
           </div>
         </div>
 
-        <section className="bg-gradient-to-r from-purple-600 via-cyan-600 to-blue-600 text-white py-16">
+        <section className="bg-gradient-to-r from-purple-600 via-cyan-600 to-blue-600 text-slate-900 py-16">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">{service.title}</h1>
             <p className="text-xl mb-6">{service.subtitle}</p>
             <div className="flex items-center gap-4">
               <span className="text-3xl font-bold">{service.price}</span>
-              <Button size="lg" className="glass-effect text-cyan-400 hover:bg-gray-100" onClick={handleConsultClick}>
+              <Button size="lg" className=" text-cyan-400 hover:bg-gray-100" onClick={handleConsultClick}>
                 <Phone className="w-5 h-5 mr-2" />
                 立即咨询
               </Button>
@@ -301,22 +301,22 @@ export default function AccountingServiceDetailPage() {
           </div>
         </section>
 
-        <section className="py-12 glass-effect">
+        <section className="py-12 ">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-white mb-6">服务介绍</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">服务介绍</h2>
             <p className="text-lg text-gray-400 leading-relaxed">{service.description}</p>
           </div>
         </section>
 
-        <section className="py-12 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+        <section className="py-12 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-white mb-8">服务优势</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">服务优势</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {service.features.map((feature, index) => (
-                <div key={index} className="glass-effect rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div key={index} className=" rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-start gap-3">
                     <CheckCircle2 className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-1" />
-                    <p className="text-gray-300">{feature}</p>
+                    <p className="text-slate-700">{feature}</p>
                   </div>
                 </div>
               ))}
@@ -324,14 +324,14 @@ export default function AccountingServiceDetailPage() {
           </div>
         </section>
 
-        <section className="py-12 glass-effect">
+        <section className="py-12 ">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-white mb-8">审计范围</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">审计范围</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {service.scope.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 rounded-lg p-4">
+                <div key={index} className="flex items-center gap-3 bg-white rounded-lg p-4">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
-                  <span className="text-gray-300">{item}</span>
+                  <span className="text-slate-700">{item}</span>
                 </div>
               ))}
             </div>
@@ -339,24 +339,24 @@ export default function AccountingServiceDetailPage() {
         </section>
 
         {/* Materials Required */}
-        <section className="py-12 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+        <section className="py-12 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-white mb-8">所需材料</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">所需材料</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {service.materials.map((material, index) => (
-                <div key={index} className="flex items-start gap-3 glass-effect rounded-lg p-4 shadow-sm">
+                <div key={index} className="flex items-start gap-3  rounded-lg p-4 shadow-sm">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-1" />
-                  <span className="text-gray-300">{material}</span>
+                  <span className="text-slate-700">{material}</span>
                 </div>
               ))}
             </div>
-            <div className="mt-8 glass-effect border-l-4 border-cyan-500 p-6 rounded">
+            <div className="mt-8  border-l-4 border-cyan-500 p-6 rounded">
               <div className="flex items-center gap-3">
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <div>
-                  <h3 className="font-bold text-white text-lg">审计周期</h3>
+                  <h3 className="font-bold text-slate-900 text-lg">审计周期</h3>
                   <p className="text-gray-400 mt-1">{service.timeframe}</p>
                 </div>
               </div>
@@ -364,19 +364,19 @@ export default function AccountingServiceDetailPage() {
           </div>
         </section>
 
-        <section className="py-16 bg-gradient-to-r from-purple-600 via-cyan-600 to-blue-600 text-white">
+        <section className="py-16 bg-gradient-to-r from-purple-600 via-cyan-600 to-blue-600 text-slate-900">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-4">专业审计团队为您服务</h2>
             <p className="text-xl mb-8">10+年审计经验，值得信赖</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="glass-effect text-cyan-400 hover:bg-gray-100" onClick={handlePhoneClick}>
+              <Button size="lg" className=" text-cyan-400 hover:bg-gray-100" onClick={handlePhoneClick}>
                 <Phone className="w-5 h-5 mr-2" />
                 电话咨询：13728777024
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:glass-effect hover:text-cyan-400 bg-transparent"
+                className="border-white text-slate-900 hover: hover:text-cyan-400 bg-transparent"
                 onClick={handleConsultClick}
               >
                 在线咨询

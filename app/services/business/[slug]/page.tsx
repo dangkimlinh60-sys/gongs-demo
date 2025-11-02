@@ -293,14 +293,14 @@ export default function ServiceDetailPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-white">
       <Header />
 
       <main className="pt-20">
         {/* Breadcrumb */}
-        <div className="glass-effect border-b border-purple-500/20">
+        <div className="border-b border-slate-200 bg-white">
           <div className="container mx-auto px-4 py-4">
-            <Link href="/" className="inline-flex items-center text-gray-300 hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:bg-clip-text transition-all duration-300">
+            <Link href="/" className="inline-flex items-center text-slate-700 hover:text-transparent hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:bg-clip-text transition-all duration-300">
               <ArrowLeft className="w-4 h-4 mr-2" />
               返回首页
             </Link>
@@ -308,18 +308,18 @@ export default function ServiceDetailPage() {
         </div>
 
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600 text-white py-20 overflow-hidden">
+        <section className="relative bg-white py-10 md:py-12 border-b border-slate-200">
           {/* 动画背景 */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff15_1px,transparent_1px),linear-gradient(to_bottom,#ffffff15_1px,transparent_1px)] bg-[size:3rem_3rem]" />
           <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/30 rounded-full blur-3xl animate-glow-pulse" />
 
           <div className="container mx-auto px-4 relative z-10">
-            <h1 className="text-5xl md:text-6xl font-black mb-6 bg-gradient-to-r from-white via-purple-100 to-cyan-100 bg-clip-text text-transparent">{service.title}</h1>
-            <p className="text-2xl mb-8 text-cyan-50">{service.subtitle}</p>
+            <h1 className="text-3xl md:text-4xl font-black text-blue-900 mb-2">{service.title}</h1>
+            <p className="text-lg md:text-xl text-slate-600 mb-4">{service.subtitle}</p>
             <div className="flex items-center gap-6">
-              <span className="text-4xl font-black bg-white/20 backdrop-blur-sm px-6 py-3 rounded-2xl border border-white/30">{service.price}</span>
-              <Button size="lg" className="relative bg-white text-purple-600 hover:bg-purple-50 shadow-2xl shadow-white/20 hover:scale-105 transition-all duration-300 rounded-xl px-8 font-bold overflow-hidden group" onClick={handleConsultClick}>
+              <span className="text-2xl font-black text-blue-700">{service.price}</span>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-slate-900 rounded-md px-4" onClick={handleConsultClick}>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/20 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <Phone className="w-5 h-5 mr-2 relative z-10" />
                 <span className="relative z-10">立即咨询</span>
@@ -329,28 +329,28 @@ export default function ServiceDetailPage() {
         </section>
 
         {/* Description */}
-        <section className="py-16 bg-gradient-to-b from-slate-900 to-slate-800 relative overflow-hidden">
+        <section className="py-16 bg-white relative">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f46e508_1px,transparent_1px),linear-gradient(to_bottom,#4f46e508_1px,transparent_1px)] bg-[size:3rem_3rem]" />
           <div className="container mx-auto px-4 relative z-10">
-            <h2 className="text-4xl font-black text-white mb-8 bg-gradient-to-r from-purple-300 via-cyan-300 to-blue-300 bg-clip-text text-transparent">服务介绍</h2>
-            <p className="text-xl text-gray-300 leading-relaxed">{service.description}</p>
+            <h2 className="text-3xl font-black text-slate-900 mb-4">服务介绍</h2>
+            <p className="text-lg text-slate-700 leading-relaxed">{service.description}</p>
           </div>
         </section>
 
         {/* Features */}
-        <section className="py-16 bg-slate-800 relative overflow-hidden">
+        <section className="py-16 bg-white relative overflow-hidden">
           <div className="absolute top-1/3 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
           <div className="absolute bottom-1/3 left-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
 
           <div className="container mx-auto px-4 relative z-10">
-            <h2 className="text-4xl font-black text-white mb-12 bg-gradient-to-r from-purple-300 via-cyan-300 to-blue-300 bg-clip-text text-transparent">服务优势</h2>
+            <h2 className="text-3xl font-black text-slate-900 mb-12 bg-gradient-to-r from-purple-300 via-cyan-300 to-blue-300 bg-clip-text text-transparent">服务优势</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {service.features.map((feature, index) => (
-                <div key={index} className="group relative glass-effect rounded-2xl p-6 border border-purple-500/20 hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-500 tech-border">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/0 via-cyan-500/0 to-blue-500/0 group-hover:from-purple-500/10 group-hover:via-cyan-500/10 group-hover:to-blue-500/10 rounded-2xl transition-all duration-500" />
+                <div key={index} className="group relative  rounded-2xl p-6 border border-blue-200 hover:border-blue-400 hover:shadow-2xl hover:shadow-blue-200/50 transition-all duration-500 tech-border">
+                  <div className="absolute inset-0" />
                   <div className="flex items-start gap-3 relative z-10">
                     <CheckCircle2 className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform duration-300" />
-                    <p className="text-gray-300 group-hover:text-white transition-colors">{feature}</p>
+                    <p className="text-slate-700 group-hover:text-slate-900 transition-colors">{feature}</p>
                   </div>
                 </div>
               ))}
@@ -359,20 +359,20 @@ export default function ServiceDetailPage() {
         </section>
 
         {/* Process */}
-        <section className="py-16 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
+        <section className="py-16 bg-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#06b6d408_1px,transparent_1px),linear-gradient(to_bottom,#06b6d408_1px,transparent_1px)] bg-[size:3rem_3rem]" />
           <div className="container mx-auto px-4 relative z-10">
-            <h2 className="text-4xl font-black text-white mb-12 bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent">办理流程</h2>
+            <h2 className="text-3xl font-black text-slate-900 mb-12 bg-gradient-to-r from-cyan-300 via-blue-300 to-purple-300 bg-clip-text text-transparent">办理流程</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {service.process.map((step, index) => (
                 <div key={index} className="relative group">
                   <div className="relative">
-                    <div className="bg-gradient-to-br from-purple-500 via-cyan-500 to-blue-500 text-white rounded-2xl w-14 h-14 flex items-center justify-center text-2xl font-black mb-4 shadow-lg shadow-cyan-500/30 group-hover:shadow-cyan-500/60 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                    <div className="bg-gradient-to-br from-blue-600 to-blue-500 text-slate-900 rounded-2xl w-14 h-14 flex items-center justify-center text-2xl font-black mb-4 shadow-lg shadow-cyan-500/30 group-hover:shadow-cyan-500/60 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
                       {index + 1}
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-2xl blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
+                    <div className="absolute inset-0" />
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-cyan-300 group-hover:bg-clip-text transition-all">{step}</h3>
+                  <h3 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-cyan-300 group-hover:bg-clip-text transition-all">{step}</h3>
                   <div className="h-1 bg-gradient-to-r from-purple-500 via-cyan-500 to-blue-500 rounded-full opacity-30 group-hover:opacity-100 transition-opacity"></div>
                 </div>
               ))}
@@ -386,24 +386,24 @@ export default function ServiceDetailPage() {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
 
           <div className="container mx-auto px-4 relative z-10">
-            <h2 className="text-4xl font-black text-white mb-12 bg-gradient-to-r from-blue-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent">所需材料</h2>
+            <h2 className="text-3xl font-black text-slate-900 mb-12 bg-gradient-to-r from-blue-300 via-purple-300 to-cyan-300 bg-clip-text text-transparent">所需材料</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {service.materials.map((material, index) => (
-                <div key={index} className="flex items-start gap-3 glass-effect rounded-2xl p-5 border border-purple-500/20 hover:border-cyan-500/40 transition-all duration-300 group">
+                <div key={index} className="flex items-start gap-3  rounded-2xl p-5 border border-blue-200 hover:border-cyan-500/40 transition-all duration-300 group">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
-                  <span className="text-gray-300 group-hover:text-white transition-colors">{material}</span>
+                  <span className="text-slate-700 group-hover:text-slate-900 transition-colors">{material}</span>
                 </div>
               ))}
             </div>
-            <div className="mt-10 glass-effect border-l-4 border-cyan-500 p-8 rounded-2xl shadow-2xl shadow-cyan-500/20">
+            <div className="mt-10  border-l-4 border-cyan-500 p-8 rounded-2xl shadow-2xl shadow-blue-200/50">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center shadow-lg shadow-cyan-500/30">
-                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-7 h-7 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-black text-white text-xl mb-1">办理时间</h3>
+                  <h3 className="font-black text-slate-900 text-xl mb-1">办理时间</h3>
                   <p className="text-cyan-200 text-lg">{service.timeframe}</p>
                 </div>
               </div>
@@ -412,14 +412,14 @@ export default function ServiceDetailPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="relative py-20 bg-gradient-to-br from-purple-600 via-cyan-600 to-blue-600 text-white overflow-hidden">
+        <section className="relative py-12 bg-white border-t border-slate-200">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff15_1px,transparent_1px),linear-gradient(to_bottom,#ffffff15_1px,transparent_1px)] bg-[size:3rem_3rem]" />
           <div className="absolute top-0 left-0 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/30 rounded-full blur-3xl animate-glow-pulse" />
 
           <div className="container mx-auto px-4 text-center relative z-10">
             <h2 className="text-4xl font-black mb-6 bg-gradient-to-r from-white via-cyan-100 to-purple-100 bg-clip-text text-transparent">准备好开始了吗？</h2>
-            <p className="text-2xl mb-10 text-cyan-50">专业团队为您提供一对一服务</p>
+            <p className="text-lg mb-6 text-slate-600">专业团队为您提供一对一服务</p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button size="lg" className="relative bg-white text-purple-600 hover:bg-purple-50 shadow-2xl shadow-white/20 hover:scale-105 transition-all duration-300 rounded-xl px-8 py-6 text-lg font-bold overflow-hidden group" onClick={handlePhoneClick}>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/0 via-purple-500/20 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -428,7 +428,7 @@ export default function ServiceDetailPage() {
               </Button>
               <Button
                 size="lg"
-                className="relative glass-effect border-2 border-white text-white hover:bg-white hover:text-purple-600 rounded-xl px-8 py-6 text-lg font-bold transition-all duration-300 hover:scale-105 overflow-hidden group"
+                className="relative  border-2 border-white text-slate-900 hover:bg-white hover:text-purple-600 rounded-xl px-8 py-6 text-lg font-bold transition-all duration-300 hover:scale-105 overflow-hidden group"
                 onClick={handleConsultClick}
               >
                 <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
