@@ -115,7 +115,7 @@ function TaxServiceCard({
       style={{animationDelay: `${index * 0.05}s`}}
     >
       {/* 悬停渐变背景 */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-cyan-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-cyan-500/10 rounded-2xl transition-all duration-500" />
+      <div className="absolute inset-0" />
 
       {/* 左上角光效 */}
       <div className="absolute -top-20 -left-20 w-40 h-40 bg-cyan-500/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -132,7 +132,7 @@ function TaxServiceCard({
 
         {/* 文字 */}
         <div>
-          <h3 className="font-bold text-xl text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-cyan-300 group-hover:to-blue-300 group-hover:bg-clip-text transition-all duration-300">
+          <h3 className="font-bold text-xl text-slate-900 group-hover:text-blue-700 transition-colors">
             {title}
           </h3>
           {subtitle && <p className="text-gray-600 group-hover:text-gray-700 transition-colors">{subtitle}</p>}
