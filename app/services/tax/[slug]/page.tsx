@@ -273,7 +273,7 @@ export default function TaxServiceDetailPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-950 via-slate-900 to-blue-950">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
       <Header />
 
       <main className="pt-20">
@@ -307,7 +307,7 @@ export default function TaxServiceDetailPage() {
           </div>
         </section>
 
-        <section className="py-12 bg-gradient-to-b from-blue-950 via-slate-900 to-blue-950">
+        <section className="py-12 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-white mb-8">服务优势</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -328,7 +328,7 @@ export default function TaxServiceDetailPage() {
             <h2 className="text-3xl font-bold text-white mb-8">服务内容</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {service.included.map((item, index) => (
-                <div key={index} className="flex items-center gap-3 bg-gradient-to-b from-blue-950 via-slate-900 to-blue-950 rounded-lg p-4">
+                <div key={index} className="flex items-center gap-3 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 rounded-lg p-4">
                   <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0" />
                   <span className="text-gray-300">{item}</span>
                 </div>
@@ -338,7 +338,7 @@ export default function TaxServiceDetailPage() {
         </section>
 
         {/* Materials Required */}
-        <section className="py-12 bg-gradient-to-b from-blue-950 via-slate-900 to-blue-950">
+        <section className="py-12 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-white mb-8">所需材料</h2>
             <div className="grid md:grid-cols-2 gap-6">

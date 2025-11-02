@@ -1,9 +1,9 @@
 import type React from "react"
-import { Target, Users, Shield, FileText, Sparkles } from "lucide-react"
+import { Target, Users, Shield, FileText, Zap, Sparkles } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-blue-950 via-indigo-950 to-slate-900 overflow-hidden min-h-[600px]">
+    <section className="relative bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900 overflow-hidden min-h-[600px]">
       {/* 动态网格背景 */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f46e515_1px,transparent_1px),linear-gradient(to_bottom,#4f46e515_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
 
@@ -17,7 +17,8 @@ export function HeroSection() {
       <div
         className="absolute inset-0 opacity-10 mix-blend-overlay"
         style={{
-          backgroundImage: "url(/brand-images/brand-01.png)",
+          backgroundImage:
+            "url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -34,9 +35,9 @@ export function HeroSection() {
                  style={{backgroundImage: 'linear-gradient(90deg, transparent, #06b6d4, #a855f7, #06b6d4, transparent)'}} />
           </div>
 
-          {/* 主标题 - 一站式代办服务平台 */}
+          {/* 主标题 */}
           <h1 className="text-7xl md:text-8xl font-black bg-gradient-to-r from-purple-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent leading-tight drop-shadow-2xl animate-gradient-shift">
-            一站式代办服务平台
+            企业经营许可证
           </h1>
 
           {/* 发光分割线 */}
@@ -45,6 +46,18 @@ export function HeroSection() {
               <div className="h-1 w-40 bg-gradient-to-r from-purple-500 via-cyan-500 to-blue-500 rounded-full shadow-lg shadow-cyan-500/50 animate-border-glow" />
               <div className="absolute inset-0 h-1 w-40 bg-gradient-to-r from-purple-500 via-cyan-500 to-blue-500 rounded-full blur-md opacity-70" />
             </div>
+          </div>
+
+          {/* 副标题徽章 */}
+          <div className="inline-flex items-center gap-3 glass-effect px-10 py-5 rounded-2xl shadow-2xl border border-purple-500/30 hover:scale-105 transition-all duration-300 hover:border-cyan-500/50 group relative overflow-hidden">
+            {/* 背景光效 */}
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-cyan-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+            <Zap className="w-7 h-7 text-cyan-400 animate-pulse relative z-10" />
+            <span className="text-2xl font-bold bg-gradient-to-r from-white via-cyan-100 to-purple-100 bg-clip-text text-transparent relative z-10">
+              一站式代办服务平台
+            </span>
+            <Zap className="w-7 h-7 text-purple-400 animate-pulse relative z-10" />
           </div>
 
           {/* 特性卡片网格 */}

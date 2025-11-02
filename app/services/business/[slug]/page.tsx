@@ -293,7 +293,7 @@ export default function ServiceDetailPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-950 via-slate-900 to-blue-950">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
       <Header />
 
       <main className="pt-20">
@@ -329,7 +329,7 @@ export default function ServiceDetailPage() {
         </section>
 
         {/* Description */}
-        <section className="py-16 bg-gradient-to-b from-blue-950 to-slate-900 relative overflow-hidden">
+        <section className="py-16 bg-gradient-to-b from-slate-900 to-slate-800 relative overflow-hidden">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f46e508_1px,transparent_1px),linear-gradient(to_bottom,#4f46e508_1px,transparent_1px)] bg-[size:3rem_3rem]" />
           <div className="container mx-auto px-4 relative z-10">
             <h2 className="text-4xl font-black text-white mb-8 bg-gradient-to-r from-purple-300 via-cyan-300 to-blue-300 bg-clip-text text-transparent">服务介绍</h2>

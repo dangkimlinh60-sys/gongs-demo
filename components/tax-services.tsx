@@ -18,7 +18,7 @@ export function TaxServices() {
   ]
 
   return (
-    <section id="tax-services" className="py-20 bg-gradient-to-b from-slate-900 via-blue-950 to-slate-900 relative overflow-hidden scroll-mt-16">
+    <section id="tax-services" className="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden scroll-mt-16">
       {/* 科技网格背景 */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#06b6d415_1px,transparent_1px),linear-gradient(to_bottom,#06b6d415_1px,transparent_1px)] bg-[size:3rem_3rem]" />
 
