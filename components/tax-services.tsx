@@ -1,5 +1,6 @@
 import { FileText, Calculator, TrendingUp, Shield, Settings, Layers } from "lucide-react"
 import Link from "next/link"
+import { SectionBanner } from "@/components/section-banner"
 
 export function TaxServices() {
   const mainService = {
@@ -37,6 +38,8 @@ export function TaxServices() {
       />
 
       <div className="container mx-auto px-4 relative z-10">
+        {/* 模块顶部横幅（来自本地图片） */}
+        <SectionBanner images={["/banners/tax/7.jpg","/banners/tax/8.jpeg","/banners/tax/9.webp"]} />
         {/* 标题区域 */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-4 mb-6">

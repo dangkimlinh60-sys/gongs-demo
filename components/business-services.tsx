@@ -1,5 +1,6 @@
 import { Building2, TrendingUp, User, Building } from "lucide-react"
 import Link from "next/link"
+import { SectionBanner } from "@/components/section-banner"
 
 export function BusinessServices() {
   const services = [
@@ -33,6 +34,8 @@ export function BusinessServices() {
       />
 
       <div className="container mx-auto px-4 relative z-10">
+        {/* 模块顶部横幅（来自本地图片） */}
+        <SectionBanner images={["/banners/business/1.webp","/banners/business/2.webp","/banners/business/3.webp"]} />
         {/* 标题区域 */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-4 mb-6">

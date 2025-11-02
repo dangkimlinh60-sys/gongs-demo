@@ -1,5 +1,6 @@
 import { Calendar, TrendingUp, Calculator, FileCheck, DollarSign, PieChart } from "lucide-react"
 import Link from "next/link"
+import { SectionBanner } from "@/components/section-banner"
 
 export function AccountingServices() {
   const mainService = {
@@ -27,6 +28,8 @@ export function AccountingServices() {
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
+        {/* 模块顶部横幅（来自本地图片） */}
+        <SectionBanner images={["/banners/accounting/12.jpeg","/banners/accounting/13.webp","/banners/accounting/14.png","/banners/accounting/15.jpg"]} />
         {/* 标题区域 */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-4 mb-6">
