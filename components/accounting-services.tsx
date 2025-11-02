@@ -1,4 +1,5 @@
 import { Calendar, TrendingUp, Calculator, FileCheck, DollarSign, PieChart } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 export function AccountingServices() {
@@ -26,7 +27,29 @@ export function AccountingServices() {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
 
+      {/* 背景（本地图片） */}
+      <div
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: "url(/gallery/12.jpeg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+
       <div className="container mx-auto px-4 relative z-10">
+        {/* 模块顶部横幅图（本地图片） */}
+        <div className="max-w-5xl mx-auto mb-10 overflow-hidden rounded-2xl border border-white/10 shadow-xl shadow-purple-500/10">
+          <Image
+            src="/gallery/13.webp"
+            alt="审计服务-形象图"
+            width={1600}
+            height={600}
+            className="w-full h-56 md:h-72 object-cover"
+            priority={false}
+          />
+        </div>
+
         {/* 标题区域 */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-4 mb-6">

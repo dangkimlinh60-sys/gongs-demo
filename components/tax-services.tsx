@@ -1,4 +1,5 @@
 import { FileText, Calculator, TrendingUp, Shield, Settings, Layers } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 export function TaxServices() {
@@ -26,17 +27,29 @@ export function TaxServices() {
       <div className="absolute top-1/3 left-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
 
-      {/* 办公室背景 */}
+      {/* 背景（本地图片） */}
       <div
-        className="absolute inset-0 opacity-5"
+        className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: "url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80)",
+          backgroundImage: "url(/gallery/7.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       />
 
       <div className="container mx-auto px-4 relative z-10">
+        {/* 模块顶部横幅图（本地图片） */}
+        <div className="max-w-5xl mx-auto mb-10 overflow-hidden rounded-2xl border border-white/10 shadow-xl shadow-cyan-500/10">
+          <Image
+            src="/gallery/8.jpeg"
+            alt="记账报税-形象图"
+            width={1600}
+            height={600}
+            className="w-full h-56 md:h-72 object-cover"
+            priority={false}
+          />
+        </div>
+
         {/* 标题区域 */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-4 mb-6">
