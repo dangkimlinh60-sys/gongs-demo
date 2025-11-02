@@ -1,9 +1,14 @@
 import type React from "react"
 import type { Metadata } from "next"
+import { Noto_Sans_SC, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-// Use system fonts to avoid network fetch in dev/build
+const notoSansSC = Noto_Sans_SC({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+})
+const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "力量集团 - 专业工商财税服务",
@@ -18,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body className={`antialiased font-sans`}>
+      <body className={`${notoSansSC.className} antialiased`}>
         {children}
         <Analytics />
       </body>
