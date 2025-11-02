@@ -19,7 +19,7 @@ export function TaxServices() {
   ]
 
   return (
-    <section id="tax-services" className="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden scroll-mt-16">
+    <section id="tax-services" className="py-16 bg-white relative overflow-hidden scroll-mt-16">
       {/* 科技网格背景 */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#06b6d415_1px,transparent_1px),linear-gradient(to_bottom,#06b6d415_1px,transparent_1px)] bg-[size:3rem_3rem]" />
 
@@ -47,15 +47,15 @@ export function TaxServices() {
             <span className="text-cyan-400 font-bold text-sm border border-cyan-500/30 px-5 py-2 rounded-full glass-effect shadow-lg shadow-cyan-500/20">
               PART
             </span>
-            <span className="text-7xl font-black bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent animate-gradient-shift">
+            <span className="text-5xl font-black text-blue-900">
               02
             </span>
             <div className="h-px w-16 bg-gradient-to-l from-transparent via-purple-500 to-transparent" />
           </div>
-          <h2 className="text-5xl font-black text-white mb-4 bg-gradient-to-r from-white via-cyan-100 to-blue-100 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-3">
             记账报税
           </h2>
-          <p className="text-gray-400 text-xl">20+服务项目，账务清晰账本失误</p>
+          <p className="text-gray-600 text-lg">20+服务项目，账务清晰账本失误</p>
         </div>
 
         {/* 服务网格 */}
@@ -63,7 +63,7 @@ export function TaxServices() {
           {/* 主推服务卡片 */}
           <Link
             href={`/services/tax/${mainService.slug}`}
-            className="group relative bg-gradient-to-br from-cyan-600 via-blue-600 to-purple-600 rounded-2xl p-10 text-white shadow-2xl shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all duration-500 cursor-pointer block overflow-hidden hover:scale-105"
+            className="group relative bg-blue-600 rounded-2xl p-10 text-white shadow-2xl shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all duration-500 cursor-pointer block overflow-hidden hover:scale-105"
           >
             {/* 动画背景 */}
             <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -111,7 +111,7 @@ function TaxServiceCard({
   return (
     <Link
       href={`/services/tax/${slug}`}
-      className="group relative glass-effect border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-500 cursor-pointer block overflow-hidden tech-border"
+      className="group relative bg-white border border-blue-200 rounded-2xl p-6 hover:border-blue-400 hover:shadow-lg transition-all duration-500 cursor-pointer block overflow-hidden tech-border"
       style={{animationDelay: `${index * 0.05}s`}}
     >
       {/* 悬停渐变背景 */}
@@ -123,7 +123,7 @@ function TaxServiceCard({
       <div className="relative flex items-center gap-4">
         {/* 图标 */}
         <div className="relative">
-          <div className="bg-gradient-to-br from-cyan-500 via-blue-500 to-purple-500 text-white p-4 rounded-xl shadow-lg shadow-cyan-500/30 group-hover:shadow-cyan-500/60 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+          <div className="bg-gradient-to-br from-blue-600 to-blue-500 text-white p-4 rounded-xl shadow-lg shadow-cyan-500/30 group-hover:shadow-cyan-500/60 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
             <Icon className="w-8 h-8" />
           </div>
           {/* 图标光晕 */}
@@ -135,7 +135,7 @@ function TaxServiceCard({
           <h3 className="font-bold text-xl text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-cyan-300 group-hover:to-blue-300 group-hover:bg-clip-text transition-all duration-300">
             {title}
           </h3>
-          {subtitle && <p className="text-gray-400 group-hover:text-gray-300 transition-colors">{subtitle}</p>}
+          {subtitle && <p className="text-gray-600 group-hover:text-gray-700 transition-colors">{subtitle}</p>}
         </div>
       </div>
 

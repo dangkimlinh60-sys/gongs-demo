@@ -19,7 +19,7 @@ export function AccountingServices() {
   ]
 
   return (
-    <section id="accounting-services" className="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-950 relative overflow-hidden scroll-mt-16">
+    <section id="accounting-services" className="py-16 bg-white relative overflow-hidden scroll-mt-16">
       {/* 科技网格背景 */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8b5cf615_1px,transparent_1px),linear-gradient(to_bottom,#8b5cf615_1px,transparent_1px)] bg-[size:3rem_3rem]" />
 
@@ -42,10 +42,10 @@ export function AccountingServices() {
             </span>
             <div className="h-px w-16 bg-gradient-to-l from-transparent via-purple-500 to-transparent" />
           </div>
-          <h2 className="text-5xl font-black text-white mb-4 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-3">
             审计服务
           </h2>
-          <p className="text-gray-400 text-xl">10+年经验团队，为您高效解决审计难题</p>
+          <p className="text-gray-600 text-lg">10+年经验团队，为您高效解决审计难题</p>
         </div>
 
         {/* 服务网格 */}
@@ -125,7 +125,7 @@ function AccountingServiceCard({
           <h3 className="font-bold text-xl text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-blue-300 group-hover:bg-clip-text transition-all duration-300">
             {title}
           </h3>
-          {subtitle && <p className="text-gray-400 group-hover:text-gray-300 transition-colors">{subtitle}</p>}
+          {subtitle && <p className="text-gray-600 group-hover:text-gray-700 transition-colors">{subtitle}</p>}
         </div>
       </div>
 

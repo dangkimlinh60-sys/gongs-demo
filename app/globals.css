@@ -4,25 +4,26 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  /* 税务官方风格：白底、深蓝主色、浅灰分隔线 */
   --background: oklch(0.99 0 0);
-  --foreground: oklch(0.15 0 0);
+  --foreground: oklch(0.16 0 0);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0 0);
+  --card-foreground: oklch(0.18 0 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0 0);
-  --primary: oklch(0.55 0.25 265);  /* 紫蓝色 */
+  --popover-foreground: oklch(0.18 0 0);
+  --primary: oklch(0.57 0.14 255);  /* 深蓝（官方风格） */
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.96 0 0);
-  --secondary-foreground: oklch(0.15 0 0);
-  --muted: oklch(0.96 0 0);
-  --muted-foreground: oklch(0.5 0 0);
-  --accent: oklch(0.96 0 0);
-  --accent-foreground: oklch(0.15 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.25 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.52 0 0);
+  --accent: oklch(0.98 0 0);
+  --accent-foreground: oklch(0.22 0 0);
+  --destructive: oklch(0.62 0.18 28);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.9 0 0);
-  --input: oklch(0.9 0 0);
-  --ring: oklch(0.55 0.25 265);
+  --border: oklch(0.92 0 0);
+  --input: oklch(0.92 0 0);
+  --ring: oklch(0.57 0.14 255);
   --chart-1: oklch(0.45 0.22 25);
   --chart-2: oklch(0.7 0.18 45);
   --chart-3: oklch(0.55 0.15 35);
@@ -192,7 +193,8 @@
     inset: 0;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(45deg, #06b6d4, #3b82f6, #8b5cf6, #06b6d4);
+    /* 改为官方深蓝系渐变 */
+    background: linear-gradient(90deg, #1e40af, #2563eb, #1e40af);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;

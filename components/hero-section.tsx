@@ -3,7 +3,7 @@ import { Target, Users, Shield, FileText, Zap, Sparkles } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900 overflow-hidden min-h-[600px]">
+    <section className="relative bg-white overflow-hidden min-h-[520px] border-b border-slate-200">
       {/* 动态网格背景 */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f46e515_1px,transparent_1px),linear-gradient(to_bottom,#4f46e515_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
 
@@ -13,16 +13,8 @@ export function HeroSection() {
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-glow-pulse" />
       <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-violet-500/20 rounded-full blur-3xl animate-glow-pulse" style={{animationDelay: '1.5s'}} />
 
-      {/* 商务背景图 */}
-      <div
-        className="absolute inset-0 opacity-10 mix-blend-overlay"
-        style={{
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
+      // 官方风格：去除大背景图
+
 
       <div className="container mx-auto px-4 py-24 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-10">
@@ -30,13 +22,13 @@ export function HeroSection() {
           <div className="flex justify-center items-center gap-3">
             <div className="h-px w-16 bg-gradient-to-r from-transparent via-purple-500 to-transparent animate-shimmer"
                  style={{backgroundImage: 'linear-gradient(90deg, transparent, #a855f7, #06b6d4, #a855f7, transparent)'}} />
-            <Sparkles className="w-5 h-5 text-purple-400 animate-pulse" />
+            <Sparkles className="w-5 h-5 text-blue-400 animate-pulse" />
             <div className="h-px w-16 bg-gradient-to-r from-transparent via-cyan-500 to-transparent animate-shimmer"
                  style={{backgroundImage: 'linear-gradient(90deg, transparent, #06b6d4, #a855f7, #06b6d4, transparent)'}} />
           </div>
 
           {/* 主标题 */}
-          <h1 className="text-7xl md:text-8xl font-black bg-gradient-to-r from-purple-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent leading-tight drop-shadow-2xl animate-gradient-shift">
+          <h1 className="text-5xl md:text-6xl font-black text-blue-900 leading-tight">
             企业经营许可证
           </h1>
 
@@ -49,15 +41,15 @@ export function HeroSection() {
           </div>
 
           {/* 副标题徽章 */}
-          <div className="inline-flex items-center gap-3 glass-effect px-10 py-5 rounded-2xl shadow-2xl border border-purple-500/30 hover:scale-105 transition-all duration-300 hover:border-cyan-500/50 group relative overflow-hidden">
+          <div className="inline-flex items-center gap-3 glass-effect px-10 py-5 rounded-2xl shadow-2xl  border border-blue-200 hover:scale-105 transition-all duration-300 hover:border-blue-400 group relative overflow-hidden">
             {/* 背景光效 */}
             <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-cyan-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-            <Zap className="w-7 h-7 text-cyan-400 animate-pulse relative z-10" />
-            <span className="text-2xl font-bold bg-gradient-to-r from-white via-cyan-100 to-purple-100 bg-clip-text text-transparent relative z-10">
+            <Zap className="w-7 h-7 text-blue-500 animate-pulse relative z-10" />
+            <span className="text-2xl font-bold text-slate-800 relative z-10">
               一站式代办服务平台
             </span>
-            <Zap className="w-7 h-7 text-purple-400 animate-pulse relative z-10" />
+            <Zap className="w-7 h-7 text-blue-400 animate-pulse relative z-10" />
           </div>
 
           {/* 特性卡片网格 */}
@@ -93,8 +85,8 @@ export function HeroSection() {
             key={i}
             className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
               i === 0
-                ? "bg-gradient-to-r from-purple-500 to-cyan-500 w-8 shadow-lg shadow-cyan-500/50"
-                : "bg-slate-600 hover:bg-gradient-to-r hover:from-purple-400 hover:to-cyan-400 hover:shadow-lg hover:shadow-cyan-400/30"
+                ? "bg-blue-600 w-8 shadow-lg shadow-blue-200"
+                : "bg-slate-300 hover:bg-blue-400 hover:shadow-lg hover:shadow-blue-200"
             }`}
           />
         ))}
@@ -114,31 +106,22 @@ function FeatureCard({
 }) {
   return (
     <div
-      className="group relative glass-effect rounded-2xl p-7 border border-purple-500/20 hover:border-cyan-500/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20 tech-border"
+      className="group relative rounded-2xl p-7 border border-blue-200 bg-white hover:border-blue-400 transition-all duration-500 hover:scale-105 hover:shadow-lg"
       style={{animationDelay: delay}}
     >
-      {/* 内部光效 */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-500/0 via-cyan-500/0 to-purple-500/0 group-hover:from-purple-500/10 group-hover:via-cyan-500/10 group-hover:to-blue-500/10 rounded-2xl transition-all duration-500" />
-
       <div className="relative flex items-center gap-5">
         {/* 图标容器 */}
         <div className="relative">
-          <div className="bg-gradient-to-br from-purple-500 via-cyan-500 to-blue-500 text-white p-4 rounded-xl shadow-lg shadow-cyan-500/30 group-hover:shadow-purple-500/60 group-hover:scale-110 transition-all duration-300 group-hover:rotate-6">
+          <div className="bg-gradient-to-br from-blue-600 to-blue-500 text-white p-4 rounded-xl shadow-md group-hover:shadow-blue-500/40 group-hover:scale-110 transition-all duration-300">
             {icon}
           </div>
-          {/* 图标背景光晕 */}
-          <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-xl blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
         </div>
 
         {/* 文字 */}
-        <span className="text-white font-bold text-2xl group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-cyan-300 group-hover:bg-clip-text transition-all duration-300">
+        <span className="text-slate-900 font-bold text-2xl group-hover:text-blue-700 transition-colors duration-300">
           {title}
         </span>
       </div>
-
-      {/* 角落装饰点 */}
-      <div className="absolute top-3 right-3 w-2 h-2 bg-cyan-400 rounded-full opacity-50 group-hover:opacity-100 group-hover:shadow-lg group-hover:shadow-cyan-400/50 transition-all duration-300" />
-      <div className="absolute bottom-3 left-3 w-2 h-2 bg-purple-400 rounded-full opacity-50 group-hover:opacity-100 group-hover:shadow-lg group-hover:shadow-purple-400/50 transition-all duration-300" />
     </div>
   )
 }

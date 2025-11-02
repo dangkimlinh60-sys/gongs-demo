@@ -15,7 +15,7 @@ export function BusinessServices() {
   ]
 
   return (
-    <section id="business-services" className="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden scroll-mt-16">
+    <section id="business-services" className="py-16 bg-white relative overflow-hidden scroll-mt-16">
       {/* 科技网格背景 */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f46e508_1px,transparent_1px),linear-gradient(to_bottom,#4f46e508_1px,transparent_1px)] bg-[size:3rem_3rem]" />
 
@@ -43,15 +43,15 @@ export function BusinessServices() {
             <span className="text-purple-400 font-bold text-sm border border-purple-500/30 px-5 py-2 rounded-full glass-effect shadow-lg shadow-purple-500/20">
               PART
             </span>
-            <span className="text-7xl font-black bg-gradient-to-r from-purple-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent animate-gradient-shift">
+            <span className="text-5xl font-black text-blue-900">
               01
             </span>
             <div className="h-px w-16 bg-gradient-to-l from-transparent via-cyan-500 to-transparent" />
           </div>
-          <h2 className="text-5xl font-black text-white mb-4 bg-gradient-to-r from-white via-purple-100 to-cyan-100 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-3">
             工商服务
           </h2>
-          <p className="text-gray-400 text-xl">帮助解决企业经营问题</p>
+          <p className="text-gray-600 text-lg">帮助解决企业经营问题</p>
         </div>
 
         {/* 服务网格 */}
@@ -88,7 +88,7 @@ function ServiceCard({
   return (
     <Link
       href={`/services/business/${slug}`}
-      className="group relative glass-effect border border-purple-500/20 rounded-2xl p-6 hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-500 cursor-pointer block overflow-hidden tech-border"
+      className="group relative bg-white border border-blue-200 rounded-2xl p-6 hover:border-blue-400 hover:shadow-lg transition-all duration-500 cursor-pointer block overflow-hidden tech-border"
       style={{animationDelay: `${index * 0.05}s`}}
     >
       {/* 悬停时的渐变背景 */}
@@ -100,7 +100,7 @@ function ServiceCard({
       <div className="relative flex items-center gap-4">
         {/* 图标 */}
         <div className="relative">
-          <div className="bg-gradient-to-br from-purple-500 via-cyan-500 to-blue-500 text-white p-4 rounded-xl shadow-lg shadow-cyan-500/30 group-hover:shadow-purple-500/60 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+          <div className="bg-gradient-to-br from-blue-600 to-blue-500 text-white p-4 rounded-xl shadow-lg shadow-cyan-500/30 group-hover:shadow-purple-500/60 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
             <Icon className="w-8 h-8" />
           </div>
           {/* 图标光晕 */}
@@ -112,7 +112,7 @@ function ServiceCard({
           <h3 className="font-bold text-xl text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-300 group-hover:to-cyan-300 group-hover:bg-clip-text transition-all duration-300">
             {title}
           </h3>
-          <p className="text-gray-400 group-hover:text-gray-300 transition-colors">{subtitle}</p>
+          <p className="text-gray-600 group-hover:text-gray-700 transition-colors">{subtitle}</p>
         </div>
       </div>
 
