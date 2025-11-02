@@ -16,43 +16,9 @@ export function HeroSection() {
       // 官方风格：去除大背景图
 
 
-      <div className="container mx-auto px-4 py-24 relative z-10">
+      <div className="container mx-auto px-4 py-16 md:py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-10">
-          {/* 顶部装饰 */}
-          <div className="flex justify-center items-center gap-3">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent via-purple-500 to-transparent animate-shimmer"
-                 style={{backgroundImage: 'linear-gradient(90deg, transparent, #a855f7, #06b6d4, #a855f7, transparent)'}} />
-            <Sparkles className="w-5 h-5 text-blue-400 animate-pulse" />
-            <div className="h-px w-16 bg-gradient-to-r from-transparent via-cyan-500 to-transparent animate-shimmer"
-                 style={{backgroundImage: 'linear-gradient(90deg, transparent, #06b6d4, #a855f7, #06b6d4, transparent)'}} />
-          </div>
-
-          {/* 主标题 */}
-          <h1 className="text-5xl md:text-6xl font-black text-blue-900 leading-tight">
-            企业经营许可证
-          </h1>
-
-          {/* 发光分割线 */}
-          <div className="flex justify-center">
-            <div className="relative">
-              <div className="h-1 w-40 bg-gradient-to-r from-purple-500 via-cyan-500 to-blue-500 rounded-full shadow-lg shadow-cyan-500/50 animate-border-glow" />
-              <div className="absolute inset-0 h-1 w-40 bg-gradient-to-r from-purple-500 via-cyan-500 to-blue-500 rounded-full blur-md opacity-70" />
-            </div>
-          </div>
-
-          {/* 副标题徽章 */}
-          <div className="inline-flex items-center gap-3 glass-effect px-10 py-5 rounded-2xl shadow-2xl  border border-blue-200 hover:scale-105 transition-all duration-300 hover:border-blue-400 group relative overflow-hidden">
-            {/* 背景光效 */}
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-cyan-600/20 to-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-            <Zap className="w-7 h-7 text-blue-500 animate-pulse relative z-10" />
-            <span className="text-2xl font-bold text-slate-800 relative z-10">
-              一站式代办服务平台
-            </span>
-            <Zap className="w-7 h-7 text-blue-400 animate-pulse relative z-10" />
-          </div>
-
-          {/* 特性卡片网格 */}
+          {/* 特性卡片网格（官方风格：保留功能要点） */}
           <div className="grid grid-cols-2 gap-6 max-w-3xl mx-auto pt-10">
             <FeatureCard
               icon={<Target className="w-8 h-8" />}
