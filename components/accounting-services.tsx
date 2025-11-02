@@ -18,7 +18,7 @@ export function AccountingServices() {
   ]
 
   return (
-    <section id="accounting-services" className="py-20 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-950 relative overflow-hidden scroll-mt-16">
+    <section id="accounting-services" className="py-20 bg-gradient-to-b from-blue-950 via-slate-900 to-blue-950 relative overflow-hidden scroll-mt-16">
       {/* 科技网格背景 */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8b5cf615_1px,transparent_1px),linear-gradient(to_bottom,#8b5cf615_1px,transparent_1px)] bg-[size:3rem_3rem]" />
 
