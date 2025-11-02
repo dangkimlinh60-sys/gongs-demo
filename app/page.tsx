@@ -4,6 +4,7 @@ import { BusinessServices } from "@/components/business-services"
 import { TaxServices } from "@/components/tax-services"
 import { AccountingServices } from "@/components/accounting-services"
 import { FloatingConsultButton } from "@/components/floating-consult-button"
+import { GallerySection } from "../components/gallery-section"
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <GallerySection />
         <BusinessServices />
         <TaxServices />
         <AccountingServices />

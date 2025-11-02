@@ -13,11 +13,11 @@ export function HeroSection() {
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-glow-pulse" />
       <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-violet-500/20 rounded-full blur-3xl animate-glow-pulse" style={{animationDelay: '1.5s'}} />
 
-      {/* 商务背景图（改为本地图片，统一视觉） */}
+      {/* 商务背景图 */}
       <div
         className="absolute inset-0 opacity-10 mix-blend-overlay"
         style={{
-          backgroundImage: "url(/gallery/14.png)",
+          backgroundImage: "url(/brand-images/brand-01.png)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
