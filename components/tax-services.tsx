@@ -60,25 +60,7 @@ export function TaxServices() {
 
         {/* 服务网格 */}
         <div className="grid md:grid-cols-3 gap-6">
-          {/* 主推服务卡片 */}
-          <Link
-            href={`/services/tax/${mainService.slug}`}
-            className="group relative bg-blue-600 rounded-2xl p-10 text-white shadow-2xl shadow-cyan-500/30 hover:shadow-cyan-500/50 transition-all duration-500 cursor-pointer block overflow-hidden hover:scale-105"
-          >
-            {/* 动画背景 */}
-            <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
-            <div className="relative">
-              <h3 className="text-4xl font-black mb-3">{mainService.title}</h3>
-              <p className="text-2xl text-cyan-100">{mainService.subtitle}</p>
-            </div>
-
-            {/* 装饰元素 */}
-            <div className="absolute -right-8 -bottom-8 w-40 h-40 bg-white/10 rounded-full blur-3xl" />
-            <div className="absolute top-4 right-4 w-3 h-3 bg-white rounded-full shadow-lg shadow-white/50 animate-pulse" />
-          </Link>
-
-          {/* 其他服务 */}
+          {/* 其他服务（主推色块卡片已移除，以保持风格一致） */}
           {services.map((service, index) => (
             <TaxServiceCard
               key={index}
