@@ -13,9 +13,7 @@ export function HeroSection() {
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-glow-pulse" />
       <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-violet-500/20 rounded-full blur-3xl animate-glow-pulse" style={{animationDelay: '1.5s'}} />
 
-      // 官方风格：去除大背景图
-
-
+      {/* 官方风格：去除大背景图 */}
       <div className="container mx-auto px-4 py-16 md:py-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-10">
           {/* 特性卡片网格（官方风格：保留功能要点） */}
